@@ -1,0 +1,19 @@
+{
+  "run_name": "baseline",
+  "learning_rate": 0.001,
+  "batch_size": 64,
+  "epochs": 12,
+  "loss_name": "cross_entropy",
+  "loss_description": "CrossEntropyLoss",
+  "seed": 42,
+  "device": "cpu",
+  "data_dir": "data",
+  "val_split": 0.1,
+  "num_workers": 0,
+  "metrics_path": "results\\baseline_metrics.csv",
+  "checkpoint_path": "checkpoints\\best_baseline.pt",
+  "best_epoch": 10,
+  "best_val_accuracy": 0.986,
+  "best_test_accuracy": 0.9563,
+  "final_test_accuracy": 0.9559
+}

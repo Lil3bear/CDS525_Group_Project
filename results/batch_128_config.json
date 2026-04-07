@@ -1,0 +1,19 @@
+{
+  "run_name": "batch_128",
+  "learning_rate": 0.001,
+  "batch_size": 128,
+  "epochs": 12,
+  "loss_name": "cross_entropy",
+  "loss_description": "CrossEntropyLoss",
+  "seed": 42,
+  "device": "cpu",
+  "data_dir": "data",
+  "val_split": 0.1,
+  "num_workers": 0,
+  "metrics_path": "results\\batch_128_metrics.csv",
+  "checkpoint_path": "checkpoints\\best_batch_128.pt",
+  "best_epoch": 12,
+  "best_val_accuracy": 0.9851666666666666,
+  "best_test_accuracy": 0.9554,
+  "final_test_accuracy": 0.9554
+}

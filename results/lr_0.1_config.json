@@ -1,0 +1,19 @@
+{
+  "run_name": "lr_0.1",
+  "learning_rate": 0.1,
+  "batch_size": 64,
+  "epochs": 12,
+  "loss_name": "cross_entropy",
+  "loss_description": "CrossEntropyLoss",
+  "seed": 42,
+  "device": "cpu",
+  "data_dir": "data",
+  "val_split": 0.1,
+  "num_workers": 0,
+  "metrics_path": "results\\lr_0.1_metrics.csv",
+  "checkpoint_path": "checkpoints\\best_lr_0.1.pt",
+  "best_epoch": 12,
+  "best_val_accuracy": 0.105,
+  "best_test_accuracy": 0.1,
+  "final_test_accuracy": 0.1
+}

@@ -1,0 +1,19 @@
+{
+  "run_name": "loss_label_smoothing",
+  "learning_rate": 0.001,
+  "batch_size": 64,
+  "epochs": 12,
+  "loss_name": "label_smoothing",
+  "loss_description": "CrossEntropyLoss(label_smoothing=0.1)",
+  "seed": 42,
+  "device": "cpu",
+  "data_dir": "data",
+  "val_split": 0.1,
+  "num_workers": 0,
+  "metrics_path": "results\\loss_label_smoothing_metrics.csv",
+  "checkpoint_path": "checkpoints\\best_loss_label_smoothing.pt",
+  "best_epoch": 10,
+  "best_val_accuracy": 0.9891666666666666,
+  "best_test_accuracy": 0.964,
+  "final_test_accuracy": 0.964
+}

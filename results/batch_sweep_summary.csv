@@ -1,0 +1,6 @@
+run_name,learning_rate,batch_size,epochs,loss_name,loss_description,seed,device,data_dir,val_split,num_workers,metrics_path,checkpoint_path,best_epoch,best_val_accuracy,best_test_accuracy,final_test_accuracy
+batch_8,0.001,8,12,cross_entropy,CrossEntropyLoss,42,cpu,data,0.1,0,results\batch_8_metrics.csv,checkpoints\best_batch_8.pt,5,0.9861666666666666,0.957,0.9539
+batch_16,0.001,16,12,cross_entropy,CrossEntropyLoss,42,cpu,data,0.1,0,results\batch_16_metrics.csv,checkpoints\best_batch_16.pt,12,0.986,0.957,0.9558
+batch_32,0.001,32,12,cross_entropy,CrossEntropyLoss,42,cpu,data,0.1,0,results\batch_32_metrics.csv,checkpoints\best_batch_32.pt,5,0.9865,0.9572,0.9562
+batch_64,0.001,64,12,cross_entropy,CrossEntropyLoss,42,cpu,data,0.1,0,results\batch_64_metrics.csv,checkpoints\best_batch_64.pt,10,0.986,0.9563,0.9559
+batch_128,0.001,128,12,cross_entropy,CrossEntropyLoss,42,cpu,data,0.1,0,results\batch_128_metrics.csv,checkpoints\best_batch_128.pt,12,0.9851666666666666,0.9554,0.9554
