@@ -1,0 +1,11 @@
+torch
+torchvision
+matplotlib
+pandas
+numpy
+scipy
+scikit-learn
+tqdm
+pot
+geomloss
+munkres

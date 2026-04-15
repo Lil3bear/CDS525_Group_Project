@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mnist-digit-recognition-oss"
+version = "0.1.0"
+description = "Open-source KMNIST baseline and MNIST OTDD distillation experiments."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Mingjian Liang"}
+]
+dependencies = [
+  "matplotlib",
+  "munkres",
+  "numpy",
+  "pandas",
+  "Pillow",
+  "pot",
+  "scikit-learn",
+  "scipy",
+  "torch",
+  "torchvision",
+  "tqdm"
+]
+
+[project.optional-dependencies]
+otdd = [
+  "geomloss"
+]
+
+[project.scripts]
+kmnist-train = "kmnist_oss.train:main"
+kmnist-experiments = "kmnist_oss.experiments:main"
+kmnist-plots = "kmnist_oss.plots:main"
+kmnist-visualize = "kmnist_oss.visualize_predictions:main"
+mnist-otdd-experiment = "mnist_otdd.experiment:main"
+mnist-otdd-cross-study = "mnist_otdd.cross_dataset_study:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

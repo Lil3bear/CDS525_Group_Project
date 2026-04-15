@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+.venv*/
+
+# Local data and generated artifacts
+data/
+artifacts/
+checkpoints/
+figures/
+results/
+
+# Jupyter / editor
+.ipynb_checkpoints/
+.DS_Store
+.vscode/
+
+# HPC outputs
+slurm-*.out
+slurm-*.err
